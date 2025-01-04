@@ -57,12 +57,12 @@ The project consists of the following components:
 
 ## Getting Started
 ### Building the Hardware (Vivado)
-1. Open the Vivado Project from [SonarDistanceWarning](./SonarDistanceWarning/) folder and locate the .xpr file
+1. Open the Vivado Project from [SonarDistanceWarning](./SonarDistanceWarning/) folder and locate the `.xpr` file
 2. Make your own adjustments as you wish.
-3. Build and generate the bitstream (the .xsa file).
+3. Build and generate the bitstream (the `.xsa` file).
 
 ### Building the Software (Vitis)
-1. Open the Vitis and build the platform project based on the .xsa file.
-2. Locate the main.c file from [SonarDW folder](./SonarDW/src/main.c/) and paste the C code into your Vitis.
+1. Open the Vitis and build the platform project based on the `.xsa` file.
+2. Locate the `main.c` file from [SonarDW folder](./SonarDW/src/main.c/) and paste the C code into your Vitis.
 3. Build and program the ZYBO Z7-20 board.
 4. Have fun and make your own adjustments freely as you wish.
