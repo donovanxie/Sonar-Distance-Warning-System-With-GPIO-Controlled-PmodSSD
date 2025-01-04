@@ -1,0 +1,156 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2.1 (win64) Build 5266912 Sun Dec 15 09:03:24 MST 2024
+| Date         : Thu Jan  2 21:44:01 2025
+| Host         : DS running 64-bit major release  (build 9200)
+| Command      : report_methodology -file SDW_wrapper_methodology_drc_routed.rpt -pb SDW_wrapper_methodology_drc_routed.pb -rpx SDW_wrapper_methodology_drc_routed.rpx
+| Design       : SDW_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 24
++-----------+----------+-------------------------------------------------+--------+
+| Rule      | Severity | Description                                     | Checks |
++-----------+----------+-------------------------------------------------+--------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 1      |
+| TIMING-18 | Warning  | Missing input or output delay                   | 23     |
++-----------+----------+-------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell SDW_i/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X36Y79 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell SDW_i/PmodOLEDrgb_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ja_pin4_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin10_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin2_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin3_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin7_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin8_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on jb_pin9_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[4] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[5] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[6] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on PmodSSD_tri_o[7] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin10_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin1_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin2_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin3_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin4_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin7_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin8_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on jb_pin9_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+

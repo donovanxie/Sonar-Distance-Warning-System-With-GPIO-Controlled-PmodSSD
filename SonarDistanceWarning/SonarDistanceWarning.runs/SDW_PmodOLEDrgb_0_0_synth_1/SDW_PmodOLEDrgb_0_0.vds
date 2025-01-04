@@ -1,0 +1,1151 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.1 (64-bit)
+# SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+# IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+# SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+# Start of session at: Thu Jan  2 21:36:15 2025
+# Process ID         : 4392
+# Current directory  : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1
+# Command line       : vivado.exe -log SDW_PmodOLEDrgb_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SDW_PmodOLEDrgb_0_0.tcl
+# Log file           : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/SDW_PmodOLEDrgb_0_0.vds
+# Journal file       : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1\vivado.jou
+# Running On         : DS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700K
+# CPU Frequency      : 3418 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 68463 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 78663 MB
+# Available Virtual  : 55636 MB
+#-----------------------------------------------------------
+source SDW_PmodOLEDrgb_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 680.629 ; gain = 240.867
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/FPGA_Project/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/FPGA/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: SDW_PmodOLEDrgb_0_0
+Command: synth_design -top SDW_PmodOLEDrgb_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18716
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1407.121 ; gain = 467.148
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/synth/SDW_PmodOLEDrgb_0_0.v:190]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/synth/SDW_PmodOLEDrgb_0_0.v:191]
+INFO: [Synth 8-6157] synthesizing module 'SDW_PmodOLEDrgb_0_0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/synth/SDW_PmodOLEDrgb_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'PmodOLEDrgb_v1_0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PmodOLEDrgb_pmod_bridge_0_0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/synth/PmodOLEDrgb_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodOLEDrgb_pmod_bridge_0_0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/synth/PmodOLEDrgb_pmod_bridge_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_axi_gpio_0_1' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:86]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_GPIO_WIDTH bound to: 4 - type: integer 
+	Parameter C_GPIO2_WIDTH bound to: 32 - type: integer 
+	Parameter C_ALL_INPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_INPUTS_2 bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS bound to: 0 - type: integer 
+	Parameter C_ALL_OUTPUTS_2 bound to: 0 - type: integer 
+	Parameter C_INTERRUPT_PRESENT bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT bound to: 32'b11111111111111111111111111111111 
+	Parameter C_IS_DUAL bound to: 0 - type: integer 
+	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
+	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
+INFO: [Synth 8-3491] module 'axi_gpio' declared at 'f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1269' bound to instance 'U0' of component 'axi_gpio' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1355]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-226] default block is never used [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:446]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:736]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:772]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:788]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:804]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:821]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:837]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:181]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:1355]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_axi_gpio_0_1' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/synth/PmodOLEDrgb_axi_gpio_0_1.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'PmodOLEDrgb_axi_quad_spi_0_0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:97]
+	Parameter Async_Clk bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_SUB_FAMILY bound to: zynq - type: string 
+	Parameter C_INSTANCE bound to: axi_quad_spi_inst - type: string 
+	Parameter C_SPI_MEM_ADDR_BITS bound to: 24 - type: integer 
+	Parameter C_TYPE_OF_AXI4_INTERFACE bound to: 0 - type: integer 
+	Parameter C_XIP_MODE bound to: 0 - type: integer 
+	Parameter C_XIP_PERF_MODE bound to: 1 - type: integer 
+	Parameter C_BYTE_LEVEL_INTERRUPT_EN bound to: 0 - type: integer 
+	Parameter C_UC_FAMILY bound to: 0 - type: integer 
+	Parameter C_FIFO_DEPTH bound to: 16 - type: integer 
+	Parameter C_SCK_RATIO bound to: 16 - type: integer 
+	Parameter C_DUAL_QUAD_MODE bound to: 0 - type: integer 
+	Parameter C_NUM_SS_BITS bound to: 1 - type: integer 
+	Parameter C_NUM_TRANSFER_BITS bound to: 8 - type: integer 
+	Parameter C_NEW_SEQ_EN bound to: 1 - type: integer 
+	Parameter C_SPI_MODE bound to: 0 - type: integer 
+	Parameter C_USE_STARTUP bound to: 0 - type: integer 
+	Parameter C_USE_STARTUP_EXT bound to: 0 - type: integer 
+	Parameter C_SPI_MEMORY bound to: 1 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI4_ADDR_WIDTH bound to: 24 - type: integer 
+	Parameter C_S_AXI4_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI4_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_SHARED_STARTUP bound to: 0 - type: integer 
+	Parameter C_S_AXI4_BASEADDR bound to: 32'b11111111111111111111111111111111 
+	Parameter C_S_AXI4_HIGHADDR bound to: 32'b00000000000000000000000000000000 
+	Parameter C_LSB_STUP bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_quad_spi' declared at 'f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36338' bound to instance 'U0' of component 'axi_quad_spi' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36578]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi_top' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34840]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO0_I_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35309]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO1_I_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35320]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO2_I_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35331]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO3_I_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:35343]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized26' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized27' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized28' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized29' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'qspi_core_interface' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19067]
+INFO: [Synth 8-638] synthesizing module 'reset_sync_module' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2378]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RESET_SYNC_AX2S_1' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2407]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RESET_SYNC_AX2S_2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2415]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync_module' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2378]
+INFO: [Synth 8-638] synthesizing module 'cross_clk_sync_fifo_1' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:14826]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_1_CDC' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15873]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15881]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15889]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_PULSE_S2AX_4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:15897]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RX_FIFO_RST_AX2S_1_CDC_1' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16562]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'RX_FIFO_RST_AX2S_2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:16570]
+INFO: [Synth 8-256] done synthesizing module 'cross_clk_sync_fifo_1' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:14826]
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 0 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1f1f - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at 'F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'RX_FIFO_II' of component 'xpm_fifo_async' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:20911]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value.   [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1905]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1927]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1639]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1879]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:642]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:642]
+INFO: [Synth 8-638] synthesizing module 'async_fifo_fg' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/lib_fifo_v1_0_rfs.vhd:246]
+	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
+	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
+	Parameter RELATED_CLOCKS bound to: 0 - type: integer 
+	Parameter WRITE_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter READ_MODE bound to: fwft - type: string 
+	Parameter FIFO_READ_LATENCY bound to: 0 - type: integer 
+	Parameter FULL_RESET_VALUE bound to: 1 - type: integer 
+	Parameter USE_ADV_FEATURES bound to: 1F1F - type: string 
+	Parameter READ_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter CDC_SYNC_STAGES bound to: 2 - type: integer 
+	Parameter WR_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_FULL_THRESH bound to: 10 - type: integer 
+	Parameter RD_DATA_COUNT_WIDTH bound to: 5 - type: integer 
+	Parameter PROG_EMPTY_THRESH bound to: 10 - type: integer 
+	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
+	Parameter ECC_MODE bound to: no_ecc - type: string 
+	Parameter WAKEUP_TIME bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_fifo_async' declared at 'F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173' bound to instance 'xpm_fifo_async_inst' of component 'xpm_fifo_async' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/lib_fifo_v1_0_rfs.vhd:1923]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized1' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1220]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1287]
+INFO: [Synth 8-226] default block is never used [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1309]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized1' (0#1) [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2173]
+INFO: [Synth 8-256] done synthesizing module 'async_fifo_fg' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/lib_fifo_v1_0_rfs.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'qspi_fifo_ifmodule' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13367]
+INFO: [Synth 8-256] done synthesizing module 'qspi_fifo_ifmodule' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13367]
+INFO: [Synth 8-638] synthesizing module 'qspi_occupancy_reg' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:3575]
+INFO: [Synth 8-256] done synthesizing module 'qspi_occupancy_reg' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:3575]
+INFO: [Synth 8-638] synthesizing module 'qspi_mode_0_module' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:8689]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'MST_TRANS_INHIBIT_D1_I' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9264]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_II' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9292]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_III' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9304]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_IV' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9316]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_V' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9340]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'SPISEL_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9419]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'SCK_I_REG' to cell 'FD' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9502]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'SCK_O_NE_4_FDRE_INST' to cell 'FDRE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10599]
+INFO: [Synth 8-256] done synthesizing module 'qspi_mode_0_module' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:8689]
+INFO: [Synth 8-638] synthesizing module 'qspi_cntrl_reg' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13716]
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_I' to cell 'FDRE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13923]
+INFO: [Synth 8-113] binding component instance 'SPI_TRISTATE_CONTROL_I' to cell 'FDRE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13923]
+INFO: [Synth 8-256] done synthesizing module 'qspi_cntrl_reg' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:13716]
+INFO: [Synth 8-638] synthesizing module 'qspi_status_slave_sel_reg' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2604]
+INFO: [Synth 8-256] done synthesizing module 'qspi_status_slave_sel_reg' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:2604]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:838]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'RST_FLOPS' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:969]
+INFO: [Synth 8-113] binding component instance 'FF_WRACK' to cell 'FDRSE' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:992]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:838]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/interrupt_control_v3_1_vh_rfs.vhd:257]
+INFO: [Synth 8-256] done synthesizing module 'qspi_core_interface' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19067]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi_top' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34840]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36578]
+INFO: [Synth 8-256] done synthesizing module 'PmodOLEDrgb_axi_quad_spi_0_0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/synth/PmodOLEDrgb_axi_quad_spi_0_0.vhd:97]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'PmodOLEDrgb_axi_quad_spi_0_0' is unconnected for instance 'axi_quad_spi_0' [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:259]
+WARNING: [Synth 8-7023] instance 'axi_quad_spi_0' of module 'PmodOLEDrgb_axi_quad_spi_0_0' has 33 connections declared, but only 32 given [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:259]
+INFO: [Synth 8-6155] done synthesizing module 'PmodOLEDrgb_v1_0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ipshared/35e8/hdl/PmodOLEDrgb_v1_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'SDW_PmodOLEDrgb_0_0' (0#1) [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/synth/SDW_PmodOLEDrgb_0_0.v:53]
+WARNING: [Synth 8-3848] Net in_top_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:84]
+WARNING: [Synth 8-3848] Net in_top_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:87]
+WARNING: [Synth 8-3848] Net in_top_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:90]
+WARNING: [Synth 8-3848] Net in_bottom_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:94]
+WARNING: [Synth 8-3848] Net in_bottom_uart_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:97]
+WARNING: [Synth 8-3848] Net in_bottom_i2c_gpio_bus_I in module/entity pmod_concat does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/src/pmod_concat.v:100]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[0].GPIO_DBus_i_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[1].GPIO_DBus_i_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[2].GPIO_DBus_i_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element Not_Dual.ALLOUT0_ND.READ_REG_GEN[3].GPIO_DBus_i_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/hdl/axi_gpio_v2_0_vh_rfs.vhd:387]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:771]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:550]
+WARNING: [Synth 8-6014] Unused sequential element gen_pf_ic_rc.gae_ic_std.ram_aempty_i_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:771]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1404]
+WARNING: [Synth 8-6014] Unused sequential element transfer_start_d2_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9627]
+WARNING: [Synth 8-6014] Unused sequential element transfer_start_d3_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9628]
+WARNING: [Synth 8-6014] Unused sequential element SPIXfer_done_int_pulse_d3_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:9685]
+WARNING: [Synth 8-6014] Unused sequential element SS_Asserted_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10863]
+WARNING: [Synth 8-6014] Unused sequential element SS_Asserted_1dly_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10864]
+WARNING: [Synth 8-6014] Unused sequential element MODF_strobe_int_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:10893]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d1_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19698]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d2_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19699]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.Bus2IP_WrCE_d3_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19700]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_d1_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19799]
+WARNING: [Synth 8-6014] Unused sequential element LEGACY_MD_WR_RD_ACK_GEN.ip2Bus_RdAck_core_reg_1_reg was removed.  [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19801]
+WARNING: [Synth 8-3848] Net cfgclk in module/entity qspi_core_interface does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19044]
+WARNING: [Synth 8-3848] Net cfgmclk in module/entity qspi_core_interface does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19045]
+WARNING: [Synth 8-3848] Net eos in module/entity qspi_core_interface does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19046]
+WARNING: [Synth 8-3848] Net preq in module/entity qspi_core_interface does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19047]
+WARNING: [Synth 8-3848] Net di in module/entity qspi_core_interface does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:19048]
+WARNING: [Synth 8-3848] Net s_axi4_awready in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34731]
+WARNING: [Synth 8-3848] Net s_axi4_wready in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34739]
+WARNING: [Synth 8-3848] Net s_axi4_bid in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34743]
+WARNING: [Synth 8-3848] Net s_axi4_bresp in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34744]
+WARNING: [Synth 8-3848] Net s_axi4_bvalid in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34745]
+WARNING: [Synth 8-3848] Net s_axi4_arready in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34759]
+WARNING: [Synth 8-3848] Net s_axi4_rid in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34763]
+WARNING: [Synth 8-3848] Net s_axi4_rdata in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34764]
+WARNING: [Synth 8-3848] Net s_axi4_rresp in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34765]
+WARNING: [Synth 8-3848] Net s_axi4_rlast in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34766]
+WARNING: [Synth 8-3848] Net s_axi4_rvalid in module/entity axi_quad_spi_top does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:34767]
+WARNING: [Synth 8-3848] Net io0_1_o in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36521]
+WARNING: [Synth 8-3848] Net io0_1_t in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36522]
+WARNING: [Synth 8-3848] Net io1_1_o in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36525]
+WARNING: [Synth 8-3848] Net io1_1_t in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36526]
+WARNING: [Synth 8-3848] Net io2_1_o in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36531]
+WARNING: [Synth 8-3848] Net io2_1_t in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36532]
+WARNING: [Synth 8-3848] Net io3_1_o in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36535]
+WARNING: [Synth 8-3848] Net io3_1_t in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36536]
+WARNING: [Synth 8-3848] Net ss_1_o in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36551]
+WARNING: [Synth 8-3848] Net ss_1_t in module/entity axi_quad_spi does not have driver. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/hdl/axi_quad_spi_v3_2_rfs.vhd:36552]
+WARNING: [Synth 8-7129] Port bus2ip_data[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[7] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[8] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[10] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[16] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_data[17] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_be[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_rdce[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[2] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[3] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[4] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[5] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[6] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[9] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[11] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[12] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[13] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[14] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port interrupt_wrce[15] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_reg_interrupts[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_reg_interrupts[1] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ipif_lvl_interrupts[0] in module interrupt_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[0] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[1] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[2] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[3] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[4] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[5] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[6] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[7] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[8] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[9] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[10] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[11] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[12] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[13] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[14] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[15] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[16] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[17] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[18] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[19] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[20] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[21] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[22] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[23] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[24] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[25] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[26] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_Data[27] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[0] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[1] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_BE[2] in module soft_reset is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[0] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[1] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[2] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[3] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[4] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[5] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[6] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[7] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[8] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[9] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[10] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[11] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[12] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[13] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[14] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[15] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[16] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[17] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[18] in module qspi_status_slave_sel_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus2IP_SPISSR_Data[19] in module qspi_status_slave_sel_reg is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1687.695 ; gain = 747.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1687.695 ; gain = 747.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1687.695 ; gain = 747.723
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1687.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_pmod_bridge_0_0/PmodOLEDrgb_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_gpio_0_1/PmodOLEDrgb_axi_gpio_0_1.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_board.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'inst/axi_quad_spi_0/U0'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc] for cell 'inst/axi_quad_spi_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/SDW_PmodOLEDrgb_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/SDW_PmodOLEDrgb_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'inst/axi_quad_spi_0/U0'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports s_axi_aclk2]'. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:50]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:50]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports ext_spi_clk]'. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:51]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc:51]
+Finished Parsing XDC File [f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0_clocks.xdc] for cell 'inst/axi_quad_spi_0/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/FPGA/Vivado/2024.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SDW_PmodOLEDrgb_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 14 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1783.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 246 instances were transformed.
+  FD => FDRE: 11 instances
+  FDR => FDRE: 218 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1783.941 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property keep_hierarchy = soft for inst/axi_quad_spi_0/U0. (constraint file  f:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.gen/sources_1/bd/SDW/ip/SDW_PmodOLEDrgb_0_0/ip/PmodOLEDrgb_axi_quad_spi_0_0/PmodOLEDrgb_axi_quad_spi_0_0.xdc, line 79).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0. (constraint file  F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0/U0. (constraint file  F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc, line 32).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0/inst. (constraint file  F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_dc_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.rrst_wr_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II /\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst /\gnuram_async_fifo.xpm_fifo_base_inst /xpm_fifo_rst_inst/\gen_rst_ic.wrst_rd_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.RX_FIFO_II . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\FIFO_EXISTS.TX_FIFO_II /\xpm_fifo_instance.xpm_fifo_async_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_gpio_0/U0/gpio_core_1/GPIO_IO_T[0]. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\LOGIC_FOR_MD_0_GEN.SPI_MODULE_I /SS_T. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\LOGIC_FOR_MD_0_GEN.SPI_MODULE_I /MOSI_T. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\LOGIC_FOR_MD_0_GEN.SPI_MODULE_I /MISO_T. (constraint file  auto generated constraint).
+Applied set_property KEEP = true for inst/axi_quad_spi_0/U0/\NO_DUAL_QUAD_MODE.QSPI_NORMAL /\QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I /\LOGIC_FOR_MD_0_GEN.SPI_MODULE_I /SCK_T. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' in module 'qspi_mode_0_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                               00
+                  iSTATE |                             0010 |                               01
+                 iSTATE0 |                             0100 |                               10
+                 iSTATE1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment__parameterized0'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst__xdcDup__1'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               WRST_IDLE |                            00001 |                              000
+                 WRST_IN |                            00010 |                              010
+                WRST_OUT |                            00100 |                              111
+               WRST_EXIT |                            01000 |                              110
+            WRST_GO2IDLE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_wrst_state_reg' using encoding 'one-hot' in module 'xpm_fifo_rst'
+INFO: [Synth 8-5552] Implemented safe state 'default_state' for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+               RRST_IDLE |                               00 |                               00
+                 RRST_IN |                               01 |                               10
+                RRST_OUT |                               10 |                               11
+               RRST_EXIT |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state_reg' using encoding 'sequential' in module 'xpm_fifo_rst'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               01 |                               10
+       both_stages_valid |                               10 |                               11
+            stage2_valid |                               11 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           transfer_okay |                               01 |                               01
+      temp_transfer_okay |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'LOCAL_TX_EMPTY_FIFO_12_GEN.spi_cntrl_ps_reg' using encoding 'sequential' in module 'qspi_mode_0_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   4 Input    5 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 5     
+	   3 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 3     
+	   4 Input    4 Bit       Adders := 10    
+	   3 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 1     
+	   4 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      5 Bit         XORs := 4     
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 58    
++---Registers : 
+	               32 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 33    
+	                4 Bit    Registers := 34    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 211   
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 19    
+	   3 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 14    
+	   2 Input    2 Bit        Muxes := 72    
+	   3 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 16    
+	   5 Input    2 Bit        Muxes := 2     
+	  11 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 126   
+	   4 Input    1 Bit        Muxes := 11    
+	   6 Input    1 Bit        Muxes := 4     
+	   5 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d5[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[0].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[1].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[2].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[3].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6) is unused and will be removed from module axi_gpio.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.CMD_ERR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPISEL_D1_REG_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPISEL_D1_REG_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MST_N_SLV_MODE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SLV_MODF_STRB_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SLV_MODF_STRB_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MODF_STROBE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.MODF_STROBE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_EMPTY_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_EMPTY_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_EMPT_4_SPISR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_EMPT_4_SPISR_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.TX_FIFO_FULL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_FULL_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SYNC_SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SYNC_SPIXFER_DONE_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.DTR_UNDERRUN_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.DTR_UNDERRUN_S2AX_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_0_LOOP_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_0_LOOP_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_0_LOOP_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_1_SPE_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_1_SPE_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_1_SPE_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_2_MST_N_SLV_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_2_MST_N_SLV_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_2_MST_N_SLV_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_3_CPOL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_3_CPOL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_3_CPOL_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_4_CPHA_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_4_CPHA_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_4_CPHA_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_5_TXFIFO_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_6_RXFIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_7_SS_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_7_SS_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_7_SS_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_8_TR_INHIBIT_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_8_TR_INHIBIT_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_8_TR_INHIBIT_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_9_LSB_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_9_LSB_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SPICR_9_LSB_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SR_3_MODF_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_quad_spi.
+INFO: [Synth 8-3332] Sequential element (NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.SR_3_MODF_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_quad_spi.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|Module Name      | RTL Object                       | Inference | Size (Depth x Width) | Primitives  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|xpm_memory_base: | gen_wr_a.gen_word_narrow.mem_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++-----------------+----------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1783.941 ; gain = 843.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    17|
+|2     |LUT2     |   118|
+|3     |LUT3     |    85|
+|4     |LUT4     |    86|
+|5     |LUT5     |   156|
+|6     |LUT6     |   141|
+|7     |RAM32M   |     2|
+|8     |RAM32X1D |     4|
+|9     |FD       |     8|
+|10    |FDR      |    93|
+|11    |FDRE     |   633|
+|12    |FDSE     |    38|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 335 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:30 . Memory (MB): peak = 1974.039 ; gain = 937.820
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 1974.039 ; gain = 1034.066
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1979.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-5572] Instance inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST has IOB constraint set, However, the instance does not seem to have valid I/O connection to be placed into I/O. The constraint on the instance will be ignored.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1986.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 107 instances were transformed.
+  FD => FDRE: 8 instances
+  FDR => FDRE: 93 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: 5a8822be
+INFO: [Common 17-83] Releasing license: Synthesis
+417 Infos, 165 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1986.852 ; gain = 1276.430
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1986.852 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/SDW_PmodOLEDrgb_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP SDW_PmodOLEDrgb_0_0, cache-ID = d30f63a5c5668aa2
+INFO: [Coretcl 2-1174] Renamed 112 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1986.852 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_PmodOLEDrgb_0_0_synth_1/SDW_PmodOLEDrgb_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file SDW_PmodOLEDrgb_0_0_utilization_synth.rpt -pb SDW_PmodOLEDrgb_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  2 21:37:02 2025...

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2.1 (64-bit)
+# SW Build 5266912 on Sun Dec 15 09:03:24 MST 2024
+# IP Build 5264866 on Sun Dec 15 16:27:47 MST 2024
+# SharedData Build 5264680 on Wed Dec 11 12:48:36 MST 2024
+# Start of session at: Thu Jan  2 21:36:15 2025
+# Process ID         : 30528
+# Current directory  : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_axi_gpio_0_0_synth_1
+# Command line       : vivado.exe -log SDW_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SDW_axi_gpio_0_0.tcl
+# Log file           : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_axi_gpio_0_0_synth_1/SDW_axi_gpio_0_0.vds
+# Journal file       : F:/FPGA_Project/SonarDistanceWarning/SonarDistanceWarning.runs/SDW_axi_gpio_0_0_synth_1\vivado.jou
+# Running On         : DS
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i7-14700K
+# CPU Frequency      : 3418 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 68463 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 78663 MB
+# Available Virtual  : 55470 MB
+#-----------------------------------------------------------
+source SDW_axi_gpio_0_0.tcl -notrace
