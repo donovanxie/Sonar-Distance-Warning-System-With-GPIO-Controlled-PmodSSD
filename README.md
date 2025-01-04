@@ -1,6 +1,18 @@
 # Purly GPIO Controlled ZYBO Z7-20 Sonar Distance Warning System
 This project is basicly a different version of [ZYBO Z7-20 Sonar Distance Warning System](https://github.com/donovanxie/ZYBO-Z7-20-Sonar-Distance-Warning-System)
 This version did not use a SystermVerilog module to drive the PmodSSD, instead, it uses a customized GPIO block to manage the logic and communication between other components.
+<p align="center">
+  <a href="https://www.youtube.com/shorts/ijbolxgYGHc">
+<img src="https://img.youtube.com/vi/ijbolxgYGHc/0.jpg" alt="YouTube Shorts Video" width="500">
+   </a>
+</p> 
+<p align="center">
+  <a href="https://www.youtube.com/shorts/ijbolxgYGHc" style="font-size: 18px; text-decoration: none; color: #0000EE;">
+    Demo Video
+  </a>
+</p>
+
+
 ## Features
 - **Distance Measurement**: 
   - Uses Pmod MAXSONAR to measure distance values in real-time in inches.
