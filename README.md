@@ -1,6 +1,6 @@
-# Purly GPIO Controlled ZYBO Z7-20 Sonar Distance Warning System
-This project is basicly a different version of [ZYBO Z7-20 Sonar Distance Warning System](https://github.com/donovanxie/ZYBO-Z7-20-Sonar-Distance-Warning-System)
-This version did not use a SystermVerilog module to drive the PmodSSD, instead, it uses a customized GPIO block to manage the logic and communication between other components.
+# GPIO Block Controlled ZYBO Z7-20 Sonar Distance Warning System
+This project is basically a different version of [ZYBO Z7-20 Sonar Distance Warning System](https://github.com/donovanxie/ZYBO-Z7-20-Sonar-Distance-Warning-System)
+This version did not use a SystermVerilog module to drive the PmodSSD. Instead, it uses a customized GPIO block to manage the logic and communication between other components.
 <p align="center">
   <a href="https://www.youtube.com/shorts/ijbolxgYGHc">
 <img src="https://img.youtube.com/vi/ijbolxgYGHc/0.jpg" alt="YouTube Shorts Video" width="500">
@@ -38,7 +38,7 @@ This version did not use a SystermVerilog module to drive the PmodSSD, instead, 
 The project consists of the following components:
 
 ### Vivado Hardware Design:
-   - Contains block design for integrating the Zynq PS, Pmod peripherals.
+   - Contains block design for integrating the Zynq PS and Pmod peripherals.
 
 #### Vitis Software Application:
    - Distance measurement using the Pmod MAXSONAR.
@@ -48,7 +48,7 @@ The project consists of the following components:
 ## System Design
 ### Block Design
 - Use block design in Vivado, using ZYNQ processor to connect all components.
-- Add Digilent provided IP files of OLED RGb display and MAXSONAR to the block design.
+- Add Digilent-provided IP files of OLED RGb display and MAXSONAR to the block design.
 - Add a customized AXI GPIO block to drive Pmod SSD, because Digilent does not have IP files for it.
 - Connect Pmod MAXSONAR to Pmod Port JA, Pmod Oled RGB Display to Pmod port JB, and Pmod SSD Display to Pmod port JD and JE.
 ### Vitis Application Logic
